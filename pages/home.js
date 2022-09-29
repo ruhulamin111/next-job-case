@@ -5,12 +5,13 @@ import GroupIcon from "@mui/icons-material/Group";
 import OndemandVideoSharpIcon from "@mui/icons-material/OndemandVideoSharp";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
+import search from '../images/search.jpg';
 
 function Home() {
 
     return (
-        <div className="">
-            <header className=" flex justify-between w-11/12 mx-auto items-center py-4">
+        <div className="space-y-10">
+            <header className=" flex justify-between w-11/12 mx-auto items-center py-4 h-20">
                 <div className="relative w-36 h-10">
                     <Image src="https://cdn-icons-png.flaticon.com/512/174/174857.png" layout="fill" objectFit="contain" alt="" />
                 </div>
@@ -27,7 +28,7 @@ function Home() {
                 </div>
             </header>
 
-            <main className="flex flex-col xl:flex-row max-w-screen-lg  mx-auto">
+            <main className="flex flex-col xl:flex-row max-w-screen-lg  mx-auto h-screen">
                 <div className="space-y-6 xl:space-y-10">
                     <h1 className="text-3xl md:text-5xl max-w-xl !leading-snug text-amber-800/80 pl-4 xl:pl-0">Welcome to our professional community</h1>
                     <div className="space-y-4">
@@ -44,13 +45,15 @@ function Home() {
                             <ArrowForwardIosRoundedIcon className="text-gray-700" />
                         </div>
                     </div>
-
+                </div>
+                <div className="relative xl:absolute w-80 mx-auto h-full object-cover xl:w-[600px] xl:h-[600px] top-20 right-5">
+                    <Image src={search} layout="fill" priority alt="" />
                 </div>
 
+
+
+
             </main>
-
-
-
         </div>
     )
 }
