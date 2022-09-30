@@ -14,6 +14,12 @@ export const authOptions = {
     ],
     secret: process.env.JWT.SECRET,
     adapter: MongoDBAdapter(clientPromise),
+    pages: {
+        signIn: '/home'
+    },
+    season: {
+        stratregy: 'jwt'
+    },
 }
 
 export default NextAuth(authOptions)
