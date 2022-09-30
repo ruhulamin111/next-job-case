@@ -1,5 +1,6 @@
-import { getToken } from "next-auth/jwt";
-export { default } from "next-auth/middleware";
+import { getToken } from "react";
+// import { getToken } from "next-auth/jwt";
+// export { default } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
 export async function middleware(req) {
